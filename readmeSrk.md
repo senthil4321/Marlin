@@ -1,8 +1,21 @@
 ## Version
 
 ### 2.0.7.2_SRK_3
+1. Update bed size to 205 165
+
+### 2.0.7.2_SRK_3
 1. Increase bed size to 200 200
-1.
+```c
+// @section machine
+//https://reprap.org/wiki/Configuring_Marlin_Bed_Dimensions
+// The size of the print bed
+#define X_BED_SIZE 205 // 140
+#define Y_BED_SIZE 165 // 100
+
+// Travel limits (mm) after homing, corresponding to endstop positions.
+#define X_MIN_POS -25
+#define Y_MIN_POS -35
+```
 
 ### 2.0.7.2_SRK_1
 1. Add inbuild solid state relay for the heatbed
