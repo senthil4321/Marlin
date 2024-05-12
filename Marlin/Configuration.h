@@ -1124,8 +1124,8 @@
 // @section machine
 //https://reprap.org/wiki/Configuring_Marlin_Bed_Dimensions
 // The size of the print bed
-#define X_BED_SIZE 205 // 140
-#define Y_BED_SIZE 165 // 100
+#define X_BED_SIZE 180 // 140
+#define Y_BED_SIZE 135 // 100
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -25
