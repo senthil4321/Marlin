@@ -184,3 +184,7 @@ cmake-build-*
 
 #Python
 __pycache__
+Marlin/bin/Marlin.ino.eep
+Marlin/bin/Marlin.ino.with_bootloader.bin
+Marlin/log.txt
+
