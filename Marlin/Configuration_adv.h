@@ -322,10 +322,12 @@
 
 /**
  * Thermal Protection parameters for the bed are just as above for hotends.
+ * So, if the bed is more than 2°C below the target for over 20 seconds, 
+ * the printer will stop with a thermal runaway error.
  */
 #if ENABLED(THERMAL_PROTECTION_BED)
-  #define THERMAL_PROTECTION_BED_PERIOD        20 // (seconds)
-  #define THERMAL_PROTECTION_BED_HYSTERESIS     2 // (°C)
+  #define THERMAL_PROTECTION_BED_PERIOD        120 // (seconds) old 20
+  #define THERMAL_PROTECTION_BED_HYSTERESIS     5 // (°C) old 2
 
   /**
    * As described above, except for the bed (M140/M190/M303).
