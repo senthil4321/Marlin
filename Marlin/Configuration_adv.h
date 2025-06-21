@@ -50,6 +50,17 @@
  */
 //#define CONFIG_EXPORT 2 // :[1:'JSON', 2:'config.ini', 3:'schema.json', 4:'schema.yml']
 
+// SRK TMC2209 UART PIN Assignment
+#define E0_DRIVER_SERIAL_TX_PIN  59
+#define X_DRIVER_SERIAL_TX_PIN  64
+#define Y_DRIVER_SERIAL_TX_PIN  44
+#define Z_DRIVER_SERIAL_TX_PIN  66
+
+#define E0_DRIVER_SERIAL_RX_PIN  63
+#define X_DRIVER_SERIAL_RX_PIN  48
+#define Y_DRIVER_SERIAL_RX_PIN  42
+#define Z_DRIVER_SERIAL_RX_PIN  65
+
 //===========================================================================
 //============================= Thermal Settings ============================
 //===========================================================================
@@ -3102,7 +3113,7 @@
    * M912 - Clear stepper driver overtemperature pre-warn condition flag.
    * M122 - Report driver parameters (Requires TMC_DEBUG)
    */
-  //#define MONITOR_DRIVER_STATUS
+  // #define MONITOR_DRIVER_STATUS
 
   #if ENABLED(MONITOR_DRIVER_STATUS)
     #define CURRENT_STEP_DOWN     50  // [mA]
@@ -3215,7 +3226,7 @@
    * Enable M122 debugging command for TMC stepper drivers.
    * M122 S0/1 will enable continuous reporting.
    */
-  //#define TMC_DEBUG
+  #define TMC_DEBUG
 
   /**
    * You can set your own advanced settings by filling in predefined functions.
