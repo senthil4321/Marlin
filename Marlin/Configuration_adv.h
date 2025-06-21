@@ -51,15 +51,22 @@
 //#define CONFIG_EXPORT 2 // :[1:'JSON', 2:'config.ini', 3:'schema.json', 4:'schema.yml']
 
 // SRK TMC2209 UART PIN Assignment
-#define E0_DRIVER_SERIAL_TX_PIN  59
-#define X_DRIVER_SERIAL_TX_PIN  64
-#define Y_DRIVER_SERIAL_TX_PIN  44
-#define Z_DRIVER_SERIAL_TX_PIN  66
+#define E0_SERIAL_TX_PIN  59
+#define E0_SERIAL_RX_PIN  64
 
-#define E0_DRIVER_SERIAL_RX_PIN  63
-#define X_DRIVER_SERIAL_RX_PIN  48
-#define Y_DRIVER_SERIAL_RX_PIN  42
-#define Z_DRIVER_SERIAL_RX_PIN  65
+#define X_SERIAL_TX_PIN  40
+#define X_SERIAL_RX_PIN  63
+
+#define Y_SERIAL_TX_PIN  44
+#define Y_SERIAL_RX_PIN  66
+
+#define Z_SERIAL_TX_PIN  42
+#define Z_SERIAL_RX_PIN  65
+
+
+
+
+
 
 //===========================================================================
 //============================= Thermal Settings ============================
